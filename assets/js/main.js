@@ -1,10 +1,16 @@
 // Scrivi un programma che stampi i numeri da 1 a 100,
 
-for (var x = 1; x < 101; x++){
-    console.log(x);
-}
+//ma per i multipli di 3 stampi“Fizz” al posto del numero 
 
-//ma per i multipli di 3 stampi “Fizz” al posto del numero 
+for (var x = 1; x < 101; x++){
+
+    if (x % 3 == 0) {
+    console.log("Fizz");
+    } else {
+        console.log(x);
+    }
+
+}
 
 //e per i multipli di 5 stampi Buzz.
 
