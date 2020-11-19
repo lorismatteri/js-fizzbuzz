@@ -4,7 +4,9 @@
 
 //e per i multipli di 5 stampi Buzz.
 
-for (var x = 1; x < 101; x++){
+//Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+
+/* for (var x = 1; x < 101; x++){
 
     if (x % 3 == 0 && x % 5 == 0) {
     console.log("FizzBuzz");
@@ -16,9 +18,25 @@ for (var x = 1; x < 101; x++){
         console.log(x);
     }
 
-}
+} */
 
-//Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+//proviamo così pour divertissement a farlo con ciclo while
+
+var x = 1;
+
+while (x < 101) {
+    
+    if (x % 3 == 0 && x % 5 == 0) {
+    console.log("FizzBuzz");
+    } else if (x % 5 == 0) {
+        console.log("Buzz");
+    } else if (x % 3 == 0) {
+        console.log("Fizz");
+    } else {
+        console.log(x);
+    };
+    x++;
+}
 
 
 
