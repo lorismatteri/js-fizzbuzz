@@ -2,17 +2,21 @@
 
 //ma per i multipli di 3 stampi“Fizz” al posto del numero 
 
+//e per i multipli di 5 stampi Buzz.
+
 for (var x = 1; x < 101; x++){
 
-    if (x % 3 == 0) {
-    console.log("Fizz");
+    if (x % 3 == 0 && x % 5 == 0) {
+    console.log("FizzBuzz");
+    } else if (x % 5 == 0) {
+        console.log("Buzz");
+    } else if (x % 3 == 0) {
+        console.log("Fizz");
     } else {
         console.log(x);
     }
 
 }
-
-//e per i multipli di 5 stampi Buzz.
 
 //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
